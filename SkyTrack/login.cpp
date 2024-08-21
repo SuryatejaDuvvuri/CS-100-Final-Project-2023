@@ -12,7 +12,7 @@ Login::Login(QWidget *parent) :
     ui->loginLabel->setPixmap(pixMap);
     ui->loginLabel->setScaledContents(true);
     ui->loginLabel->setFixedSize(ui->loginLabel->pixmap().size());
-    loginHandler.setAPIKey("AIzaSyC0rRkKjiQCW3gqpPzir3mO8lM2PAtqguM");
+    loginHandler.setAPIKey("");
     ui->lineEdit->setPlaceholderText("Ex. user09@gmail.com");
     ui->lineEdit_2->setPlaceholderText("Ex. CS10023 - minimum size of 6 letters");
     connect(&loginHandler, &LoginAuth::userSignedIn, this, &Login::handleSuccess);
